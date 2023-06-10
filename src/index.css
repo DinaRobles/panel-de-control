@@ -22,3 +22,12 @@
   font-size: 50px;
   color: purple;
 }
+
+@media (max-width: 600px) {
+  .titulo{
+    font-size: 20px
+  }
+  .descripcion {
+    font-size: 14px;
+  }
+}
