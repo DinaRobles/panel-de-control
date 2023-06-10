@@ -1,0 +1,32 @@
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section-estadistica{
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  padding: 20px;
+  background-color: purple;
+  margin: 20px;
+  border-radius: 10px;
+  color: white;
+
+}
+
+.parte-1{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+.parte-2{
+  display: flex;
+  align-items: center;
+}
+
+.img-estadistica{
+  width: 100px;
+  height: 100px;
+}
