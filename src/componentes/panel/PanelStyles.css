@@ -1,0 +1,33 @@
+.tabs-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  background-color: purple;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.tab.active {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+.tab.active::after{
+  content: '⭐';
+}
+
+.tab-content {
+  margin-top: 10px;
+  padding: 10px;
+}
