@@ -11,6 +11,21 @@ function Panel() {
     setActiveTab(index);
   };
 
+  const tabsData = [
+    {
+      label: "Inicio",
+      content: <Inicio />,
+    },
+    {
+      label: "Estadisticas",
+      content: <Estadisticas />,
+    },
+    {
+      label: "Productos",
+      content: <Productos />,
+    },
+  ];
+
   return (
     <div className="tabs-container">
       <div className="tabs">
@@ -29,18 +44,4 @@ function Panel() {
   );
 }
 
-const tabsData = [
-  {
-    label: "Inicio",
-    content: <Inicio />,
-  },
-  {
-    label: "Estadisticas",
-    content: <Estadisticas />,
-  },
-  {
-    label: "Productos",
-    content: <Productos />,
-  },
-];
 export default Panel;
