@@ -1,10 +1,10 @@
 import "../EstadisticasStyles.css";
 
-function PrecioProm({ datosProm }) {
+function CantidadProm({ datosProm }) {
   return (
     <section className="section-estadistica">
       <div className="parte-1">
-        <p className="titulo-estadistica">Precio promedio de los productos</p>
+        <p className="titulo-estadistica">Cantidad promedio de productos</p>
         <img
           src="src/componentes/estadisticas/partes/img/promedio.png"
           alt=""
@@ -18,4 +18,4 @@ function PrecioProm({ datosProm }) {
   );
 }
 
-export default PrecioProm;
+export default CantidadProm;

@@ -1,10 +1,10 @@
 import "../EstadisticasStyles.css";
 
-function Ingresos({ datoIngresos }) {
+function UsuariosTotales({ usuariostotales }) {
   return (
     <section className="section-estadistica">
       <div className="parte-1">
-        <p className="titulo-estadistica">Ingresos totales generados</p>
+        <p className="titulo-estadistica">Usuarios totales en la tienda</p>
         <img
           src="src/componentes/estadisticas/partes/img/ingresos.png"
           alt="Esta"
@@ -12,10 +12,10 @@ function Ingresos({ datoIngresos }) {
         />
       </div>
       <div className="parte-2">
-        <p className="estadistica">{datoIngresos}</p>
+        <p className="estadistica">{usuariostotales}</p>
       </div>
     </section>
   );
 }
 
-export default Ingresos;
+export default UsuariosTotales;
