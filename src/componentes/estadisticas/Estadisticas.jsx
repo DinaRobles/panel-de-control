@@ -23,11 +23,13 @@ function Estadisticas() {
 
   const fetchData = async () => {
     try {
+      // Aqui obtengo la cantidad de productos que extraje del archivo api.js
       const productsCount = await getTotalProducts();
       setProductsCount(productsCount);
 
       setLoading(false);
 
+      // Aqui obtengo la cantidad total de usuarios
       const response = await fetch("https://fakestoreapi.com/users");
       const users = await response.json();
       const totalUsuarios = users.length;
@@ -38,6 +40,7 @@ function Estadisticas() {
     }
   };
 
+  // Aqui obtengo la cantidad total de pedidos
   const fetchCartData = () => {
     fetch("https://fakestoreapi.com/carts")
       .then((res) => res.json())
@@ -45,6 +48,7 @@ function Estadisticas() {
       .catch((error) => console.log(error));
   };
 
+  // Aqui obtengo la cantidad total de categorias
   const fetchCategoriesData = () => {
     fetch("https://fakestoreapi.com/products/categories")
       .then((res) => res.json())
@@ -60,6 +64,7 @@ function Estadisticas() {
     return <div>{error}</div>;
   }
 
+  // Aqui calculo el promedio de la cantidad de productos en el carrito
   function calculateCantidadPromedio() {
     let totalProducts = 0;
 
